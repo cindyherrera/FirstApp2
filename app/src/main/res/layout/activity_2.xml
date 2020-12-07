@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context=".Activity2">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/red"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="-262dp"
+        android:fontFamily="@font/bungee"
+        android:textColor="@color/red"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/youLose"
+        android:layout_width="251dp"
+        android:layout_height="208dp"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/design_default_color_background"
+        android:contentDescription="@string/image3"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/got_dusted" />
+
+</RelativeLayout>
