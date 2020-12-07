@@ -17,7 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/bungee"
-        android:hint="enter your name"
+        android:hint="@string/enter_your_name"
         android:importantForAutofill="no"
         android:inputType="text"
         android:textColor="@color/red"
@@ -36,7 +36,7 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="-39dp"
         android:fontFamily="@font/bungee"
-        android:text="TO BE OR NOT TO BE? "
+        android:text="@string/to_be_or_not_to_be"
         android:textSize="30sp" />
 
     <Button

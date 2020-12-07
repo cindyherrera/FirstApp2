@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
+    android:background="@drawable/bg_2"
     tools:context=".Activity2">
-
 
     <TextView
         android:id="@+id/textView1"
@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/bungee"
-        android:textColor="@color/red"
+        android:textColor="@color/white"
         android:textSize="50sp" />
 
     <TextView
@@ -28,22 +28,37 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="false"
         android:layout_centerInParent="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="-262dp"
         android:fontFamily="@font/bungee"
-        android:textColor="@color/red"
+        android:textColor="@color/white"
         android:textSize="50sp" />
 
     <ImageView
         android:id="@+id/youLose"
-        android:layout_width="251dp"
-        android:layout_height="208dp"
+        android:layout_width="762dp"
+        android:layout_height="502dp"
         android:layout_alignBottom="@id/textView2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/design_default_color_background"
+        android:layout_marginBottom="-114dp"
         android:contentDescription="@string/image3"
         android:visibility="invisible"
-        app:srcCompat="@mipmap/got_dusted" />
+        app:srcCompat="@mipmap/dusted_2_foreground" />
+
+    <ImageView
+        android:id="@+id/imgYouWin"
+        android:layout_width="643dp"
+        android:layout_height="433dp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="41dp"
+        android:contentDescription="@string/winningimg"
+        android:cropToPadding="false"
+        app:srcCompat="@mipmap/you_won_foreground"
+        tools:visibility="visible"
+        android:layout_alignParentStart="false" />
 
 </RelativeLayout>

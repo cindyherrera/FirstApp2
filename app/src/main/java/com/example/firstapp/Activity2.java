@@ -31,21 +31,25 @@ public class Activity2 extends AppCompatActivity {
 
         textView2.setText(text);
         textView1.setText(resultFinal[randomNumber]);
-
+        ImageView youWin = (ImageView) findViewById(R.id.imgYouWin);
+        youWin.setVisibility(View.VISIBLE);
 
         if (randomNumber != 1) {
 
-            ImageView youLose  = (ImageView) findViewById(R.id.youLose);
+            ImageView youLose = (ImageView) findViewById(R.id.youLose);
             youLose.setVisibility(View.VISIBLE);
-
+            youWin.setVisibility(View.INVISIBLE);
             vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
             boolean hasVibratingMode = vibrator.hasVibrator();
-            if(hasVibratingMode== true) {
+            if (hasVibratingMode) {
+
                 Toast.makeText(this, "vibrate on", Toast.LENGTH_SHORT).show();
-                vibrator.vibrate(1000);
-            }
-            else
+
+                vibrator.vibrate(2000);
+
+            } else
                 Toast.makeText(this, "no vibrate capabilities", Toast.LENGTH_SHORT).show();
+
         }
     }
 }

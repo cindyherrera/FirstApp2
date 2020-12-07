@@ -8,4 +8,7 @@
     <string name="end_game">END GAME</string>
     <string name="todo2">TODO</string>
     <string name="image3">TODO</string>
+    <string name="enter_your_name">enter your name</string>
+    <string name="to_be_or_not_to_be">TO BE OR NOT TO BE?</string>
+    <string name="winningimg">winningimg</string>
 </resources>
